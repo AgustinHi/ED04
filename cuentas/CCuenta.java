@@ -1,5 +1,11 @@
 package cuentas;
 public class CCuenta {
+	
+	private String nombre;
+    private String cuenta;
+    private double saldo;
+    private double tipoInteres;
+    private double saldoActual;
 
 
     public String getNombre() {
@@ -42,11 +48,7 @@ public class CCuenta {
 		this.saldoActual = saldoActual;
 	}
 
-	private String nombre;
-    private String cuenta;
-    private double saldo;
-    private double tipoInteres;
-    private double saldoActual;
+	
     
     public CCuenta()
     {
@@ -81,6 +83,7 @@ public class CCuenta {
     }
     
     public void operativa_cuenta(double saldoActual) {
+    	float cantidad;
     	
         saldoActual = saldo + tipoInteres;
         System.out.println("El saldo actual es"+ saldoActual );
