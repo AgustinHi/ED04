@@ -1,5 +1,11 @@
 package cuentas;
+/**
+ * @author Agustin
+ * @version 1.0
+ *  */
+
 public class CCuenta {
+	
 	
 	private String nombre;
     private String cuenta;
@@ -53,7 +59,13 @@ public class CCuenta {
     public CCuenta()
     {
     }
-
+    /**
+     * @param nom
+     * @param cue
+     * @param sal
+     * @param tipo
+     */
+    
     public CCuenta(String nom, String cue, double sal, double tipo)
     {
         nombre =nom;
@@ -65,6 +77,10 @@ public class CCuenta {
     {
         return saldo;
     }
+    /**
+     * @param cantidad
+     * @throws Exception
+     */
 
     public void ingresar(double cantidad) throws Exception
     {
@@ -82,6 +98,9 @@ public class CCuenta {
         saldo = saldo - cantidad;
     }
     
+    /**
+     * @param saldoActual
+     */
     public void operativa_cuenta(double saldoActual) {
     	float cantidad;
     	
