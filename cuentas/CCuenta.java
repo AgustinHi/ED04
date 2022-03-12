@@ -6,7 +6,8 @@ public class CCuenta {
     private String cuenta;
     private double saldo;
     private double tipoInteres;
-
+    private double saldoActual;
+    
     public CCuenta()
     {
     }
@@ -37,5 +38,11 @@ public class CCuenta {
         if (estado()< cantidad)
             throw new Exception ("No se hay suficiente saldo");
         saldo = saldo - cantidad;
+    }
+    
+    public void operativa_cuenta(double saldoActual) {
+    	
+        saldoActual = saldo + tipoInteres;
+        System.out.println("El saldo actual es"+ saldoActual );
     }
 }
